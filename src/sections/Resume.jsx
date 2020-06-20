@@ -16,7 +16,7 @@ class Resume extends Component {
         return (
             <div id="resume-container">
                 <iframe src={resume} width="100%" height="850px"></iframe>
-                <button>Open Resume <OpenInNew style={{ "margin-bottom": "-3px" , "fontSize": "1rem"}}/></button>
+                <a href={resume} target="_blank"><button>Launch Full <OpenInNew style={{ "margin-bottom": "-3px" , "fontSize": "1rem"}}/></button></a>
             </div>
         );
     }

@@ -13,16 +13,15 @@ import translation_thumbnail from '../images/translation/translation_thumbnail.p
 import dataverse_home from '../images/dataverse/dv_home_page.png';
 import jam_zoomout from '../images/jam-stage/zoomed-out.png';
 import jam_zoomin from '../images/jam-stage/close-up.png';
-import blue_poster from '../images/poster/blue_poster.png';
 import orange_poster from '../images/poster/orange_poster.png';
-import pink_poster from '../images/poster/pink_poster.png';
 import netflix_flow from '../images/netflix/netflix_actor_flow_with_tooltip.png';
 import netflix_runtime from '../images/netflix/netflix_runtime_graph.png';
 import dash_ideation from '../images/dash/ideation.png';
 import dash_interaction_table from '../images/dash/interaction_table.png';
 import dash_touch_demo from '../images/dash/touch_menu_cropped.mp4';
-import translation_demo from '../images/translation/translation_demo.mov';
+import translation_demo from '../images/translation/translation_demo.mp4';
 import translation_diagram from '../images/translation/translation_diagram.png';
+import poster_demo from '../images/poster/poster_demo.mp4'
 
 
 class CodeProjects extends Component {
@@ -46,8 +45,8 @@ class CodeProjects extends Component {
             {title: "Jam Stage", logline: "An audio-reactive environment made with Three.js", thumbnail: jam_thumbnail, languages: ["Three.js, WebAudio, JS"], launchLink: "https://laurawilsonri.github.io/jam-stage/", pageHTML: this.getJamStagePage()},
             {title: "COVID-19 Poster Generator", logline: "Customize your own social distancing poster", thumbnail: poster_thumbnail, languages: ["HTML, CSS, JS"], launchLink: "https://laurawilsonri.github.io/covid-poster-generator/", pageHTML: this.getPosterGenPage()},
             {title: "Visualize Netflix in D3", logline: "A dashboard of Netflix data visualizations created with D3.js", thumbnail: netflix_thumbnail, languages: ["D3, JS, HTML"], launchLink: "https://laurawilsonri.github.io/netflix-visualizer/", pageHTML: this.getNetflixPage()},
-            {title: "Dash", logline: "A collaborative online platform for media management", languages: ["React, TypeScript, C#"], thumbnail: dash_thumbnail, pageHTML: this.getDashPage()},
-            {title: "Translation API", logline: "An automated translation workflow to multilingual sites", languages: ["Python, Django, Wagtail"], thumbnail: translation_thumbnail, pageHTML: this.getTranslationPage()}
+            {title: "Dash", logline: "A collaborative online platform for media management", languages: ["React, TypeScript, C#"], thumbnail: dash_thumbnail, pageHTML: this.getDashPage(), demoLink: "https://cs.brown.edu/research/ptc/#/project/dash"},
+            {title: "Translation API", logline: "An automated translation workflow to multilingual sites", languages: ["Python, Django, Wagtail"], thumbnail: translation_thumbnail, pageHTML: this.getTranslationPage(), demoLink: translation_demo}
         ]}
 
     getDataversePage() {
@@ -144,11 +143,15 @@ class CodeProjects extends Component {
         return <div className="project-expansion">
             <h3>Overview</h3>
                 <p>This Poster Generator lets users customize and download their own social distancing poster, helping people visualize and respect 6ft of distance through humor! </p>
-                <p>See some examples of the posters below.</p>
-            
-                <img src={blue_poster}></img>
+                <p>Below is a demo of some poster combinations you can create, or try it out yourself <a href="https://laurawilsonri.github.io/covid-poster-generator/" target="_blank">on the site</a>.</p>
+
+                <video className="autoplay-video" autoPlay muted loop style={{"width": "100%"}}>
+                    <source src={poster_demo} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
                 <img src={orange_poster}></img>
-                <img src={pink_poster}></img>
+                <label>An example of one of the posters you can create!</label>
 
             <h3>How I Built It</h3>
                 <p>I used HTML, CSS, and JavaScript to make the poster generator, and the jsPDF library to download the HTML as a pdf.</p>
@@ -289,14 +292,15 @@ class CodeProjects extends Component {
 
         return (
             <div id="code-projects">
-                <h1>What I've been Coding Up</h1>
+                <h2>What I've been Coding Up</h2>
 
                 <DisplayGrid items={this.state.projects.map((p) => <PopupButton key={"project-count-" + project_count++} 
                     title={p.title} 
                     subtitle={p.logline} 
                     thumbnail={p.thumbnail} 
                     keywords={p.languages}
-                    launchLink={p.launchLink}
+                    launchLink={p.launchLink ? p.launchLink : p.demoLink}
+                    launchBtnText={p.demoLink && "DEMO"}
                     pageHTML={p.pageHTML}/>)} />
            
             </div>

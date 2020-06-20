@@ -39,7 +39,7 @@ class PopupButton extends Component {
                         <p className="popup-subtitle">{this.props.subtitle}</p>
                         <div className="popup-control-panel">
                             {this.props.keywords?.map((word) =>  <small>{word}</small>)}
-                            <a className="clickable" href={this.props.launchLink} target="_blank"><small>LAUNCH<OpenInNew style={{ "margin-bottom": "-3px" , "fontSize": "1rem"}}/></small></a>
+                            {this.props.launchLink && <a className="clickable" href={this.props.launchLink} target="_blank"><small>{this.props.launchBtnText ? this.props.launchBtnText : "LAUNCH"}<OpenInNew style={{ "margin-bottom": "-3px" , "fontSize": "1rem"}}/></small></a>}
                         </div>
                     </div>
                 </div>

@@ -73,7 +73,7 @@ class DesignProjects extends Component {
             <video className="autoplay-video" autoPlay muted loop>
                 <source src={train_app_demo} type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video>            
 
             <h3>What will Trivia Train acheive?</h3>
             <ul>
@@ -100,7 +100,7 @@ class DesignProjects extends Component {
             </ul>
 
             <h3>Result of the competition</h3>
-            <p>We were awarded 1st place at the 2020 RISD Makeathon for our design of Trivia Train!</p> 
+            <p>We were awarded <b>1st place at the 2020 RISD Makeathon</b> for our design of Trivia Train!</p> 
            
             </div>;
 
@@ -110,7 +110,7 @@ class DesignProjects extends Component {
 
         return (
             <div id="design-projects">
-                <h1>Spotlight Design Projects</h1>
+                <h2>Spotlight Design Projects</h2>
 
                 <DisplayGrid items={this.state.projects.map((p) => <PopupButton key={"design-project-" + project_count++} 
                     title={p.title} 

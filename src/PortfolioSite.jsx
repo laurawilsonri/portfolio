@@ -6,6 +6,7 @@ import './PortfolioSite.css';
 import CodeProjects from './sections/CodeProjects';
 import DesignProjects from './sections/DesignProjects';
 import Resume from './sections/Resume';
+import ArtProjects from './sections/ArtProjects';
 
 class PortfolioSite extends Component {
 
@@ -17,7 +18,7 @@ class PortfolioSite extends Component {
             {name: "WHO I AM", content: <WhoIAmPage/>},
             {name: "CODE", content: <CodeProjects/>},
             {name: "DESIGN", content: <DesignProjects/>},
-            {name: "STUDIO ART", content: <Section id="art"/>},
+            {name: "STUDIO ART", content: <ArtProjects/>},
             {name: "RESUME", content: <Resume/>}
         ]
 
@@ -44,7 +45,7 @@ class PortfolioSite extends Component {
                 </div>
              </div>
 
-                <footer>This website was made with 💙 using Reactjs. <a>See source code.</a></footer>
+                <footer>This website was made with 💙 using Reactjs. <a href="https://github.com/laurawilsonri/portfolio" target="_blank">See source code.</a></footer>
             </div>
         );
     }

@@ -18,7 +18,8 @@
 }
 
 .popup-title {
-    font-size: 1.7vw;
+    font-size: 19px;
+    margin-top: 5%;
 }
 
 .popup-btn:hover {
@@ -43,7 +44,7 @@
     width: 100%;
     justify-content: space-between;
     color: #a6aaab;
-    font-size: 1vw;
+    font-size: 14px;
 }
 
 .popup-btn-text {
@@ -55,7 +56,6 @@
 }
 
 .popup-subtitle {
-    font-size: 1vw;
     font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -86,12 +86,8 @@ label {
 /* phone view */
 @media screen and (max-width: 1000px) {
 
-    .popup-subtitle {
-        font-size: 11px;
-    }
-
     .popup-control-panel {
-        font-size: 11px;
+        font-size: 12px;
     }
 
 }
@@ -105,15 +101,6 @@ label {
 
     .popup-subtitle {
         min-height: 20px;
-        font-size: 2.5vw;
-    }
-
-    .popup-control-panel {
-        font-size: 2.5vw;
-    }
-
-    .popup-title {
-        font-size: 18px;
     }
 
 }
