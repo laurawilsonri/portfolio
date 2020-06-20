@@ -1,0 +1,60 @@
+.right-align {
+    text-align: right;
+}
+
+.changeable {
+    color: turquoise;
+}
+
+p b {
+   color: #9270cc
+}
+
+li b {
+    color: #9270cc
+}
+
+#code-projects {
+    width: 100%;
+}
+
+.project-expansion {
+    padding: 7%;
+    padding-top: 10px;
+}
+
+.project-expansion img, video {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#who-i-am-div p {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+#resume-container {
+    width: 750px;
+}
+
+button {
+    padding: 12px;
+    background-color: #36d1c5;
+    box-shadow: gray 3px 1px 3px;
+    color: white;
+    border-radius: 7px;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: turquoise;
+    letter-spacing: .2em;
+    transition: all .2s ease-out;
+}

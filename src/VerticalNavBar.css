@@ -1,0 +1,83 @@
+.navbar {
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar a {
+    color: black;
+    font-style: bold;
+}
+
+.navbar h4 {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: .65em;
+  margin-bottom: 0;
+}
+
+.navbar h4:hover {
+  font-weight: 800;
+  letter-spacing: .2em;
+  transition: all .2s ease-out;
+}
+
+.selected {
+  color:turquoise;
+  font-weight: 800 !important;
+  letter-spacing: .2em;
+  transition: all .2s ease-out;
+}
+
+#profile-img {
+  width: 100%;
+  margin-top: -10px;
+}
+
+#title {
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: lightgray;
+}
+
+#pages {
+  font-family: monospace;
+  font-size: 1.25em;
+}
+
+/* phone view */
+@media screen and (max-width: 1200px) {
+  #title {
+    font-size: 1.1em;
+    margin-bottom: -8px;
+  }
+}
+
+/* phone view */
+@media screen and (max-width: 600px) {
+  .navbar {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 80%;
+      
+  }
+
+  .navbar h4 {
+    line-height: 1em;
+    margin: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  #profile-img {
+      display: none;
+  }
+
+  #title {
+    font-size: 1.25em;
+  }
+}

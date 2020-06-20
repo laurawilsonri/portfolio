@@ -1,0 +1,124 @@
+.intro-text {
+    font-size: 72;
+}
+
+.site-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#f0f0f0; 
+     padding-top: 50px;
+     padding-left: 7%;
+     width: 55%;
+     padding-bottom: 5em;
+
+}
+
+#sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#portfolio-navbar {
+    display: flex;
+    width: 15%;
+    min-width: 135px;
+    max-width: 300px;
+    padding: 30px;
+    background-color: #302f2f;
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    border-top: solid gray 15px;
+    margin-right: 5%;
+    box-shadow: grey 2px 3px 5px;
+    border-radius: 10px;
+}
+
+#who-i-am-div {
+    padding-top:20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    font-style: italic;
+    color: gray;
+    font-size: .8em;
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+ }
+
+ .site-wrapper {
+    position: relative;
+    min-height: 100vh;
+ }
+
+ p, ol, ul {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #302f2f
+}
+
+.large-title {
+    color: black;
+    font-size: 3em;
+    line-height: 1em;
+    margin-top: 2em;
+}
+
+.large-subtitle {
+    color:gray;
+    font-weight: 300;
+}
+
+.small-subtitle {
+    color:gray;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+ /* tablet view */
+@media screen and (max-width: 800px) {
+
+    #dynamic-text {
+        font-size: 1.15em;
+    }
+
+    p, ol, ul {
+        font-size: 12px;
+    }
+
+    .large-title {
+        margin-top: 1em;
+    }
+}
+
+/* phone view */
+@media screen and (max-width: 600px) {
+
+    #portfolio-navbar {
+        flex-direction: column;
+        justify-content: space-between;
+        right: auto;
+        flex-wrap: nowrap;
+        top: 0;
+        left: -5px;
+        width: calc(100% - 70px);
+        max-width: 600px;
+        padding: 15px 40px;
+        border-radius: 0px;
+    }
+
+    .site-content {
+        width: 88%;
+        margin-top: 100px;
+    }
+
+    #dynamic-text {
+        font-size: 100%;
+    }
+}
