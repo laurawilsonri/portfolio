@@ -64,6 +64,14 @@ footer {
     line-height: 1.25em;
 }
 
+a:focus {
+    outline: none;
+}
+
+div:focus {
+    outline: none;
+}
+
 .large-title {
     color: black;
     font-size: 3em;

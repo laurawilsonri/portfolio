@@ -62,13 +62,12 @@ class CodeProjects extends Component {
            
             <h3>My Role</h3>
             <p>This website was the final project for my Software Engineering class, completed with 3 other students over the course of 4 weeks.</p>
-            <p>The areas of the project I worked on included:
+            <p>The areas of the project I worked on included: </p>
             <ul>
                 <li>The frontend for the individual games <em>(Reactjs)</em></li>
                 <li>The graphics, art, and iconography <em>(Adobe Illustrator)</em></li>
                 <li>The backend integration and support for multiplayer <em>(Java)</em></li>
             </ul>
-            </p>
             
             <h3>Takeaways</h3>
             <p>
