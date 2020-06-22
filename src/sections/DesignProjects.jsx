@@ -18,7 +18,6 @@ import train_physical_demo from '../images/train/train_physical_demo.mp4';
 import train_app_demo from '../images/train/train_app_walkthrough_cropped.mp4'; 
 // happy the robot
 import happy_3d_model from '../images/happy-robot/3d_model.png';
-import happy_robot_video from '../images/happy-robot/happy_robot_video.mp4';
 import happy_gif from '../images/happy-robot/happy_the_robot.gif';
 import happy_ideation from '../images/happy-robot/ideation.png';
 import happy_iteration1 from '../images/happy-robot/iteration1.jpeg';
@@ -192,10 +191,7 @@ class DesignProjects extends Component {
            In our final iteration, we explored how best to communicate the story behind this product.
            To do so, we created the following video.
         </p>
-        <video controls>
-                <source src={happy_robot_video} type="video/mp4" />
-                Your browser does not support the video tag.
-         </video>   
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/8xm_kvFYvto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
          <h3>The Team</h3>
          <p>I completed this project in partnership with fellow student Delora Li.</p>

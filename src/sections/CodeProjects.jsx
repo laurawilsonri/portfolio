@@ -13,13 +13,11 @@ import translation_thumbnail from '../images/translation/translation_thumbnail.p
 import dataverse_home from '../images/dataverse/dv_home_page.png';
 import jam_zoomout from '../images/jam-stage/zoomed-out.png';
 import jam_zoomin from '../images/jam-stage/close-up.png';
-import orange_poster from '../images/poster/orange_poster.png';
 import netflix_flow from '../images/netflix/netflix_actor_flow_with_tooltip.png';
 import netflix_runtime from '../images/netflix/netflix_runtime_graph.png';
 import dash_ideation from '../images/dash/ideation.png';
 import dash_interaction_table from '../images/dash/interaction_table.png';
 import dash_touch_demo from '../images/dash/touch_menu_cropped.mp4';
-import translation_demo from '../images/translation/translation_demo.mp4';
 import translation_diagram from '../images/translation/translation_diagram.png';
 import poster_demo from '../images/poster/poster_demo.mp4'
 
@@ -46,7 +44,7 @@ class CodeProjects extends Component {
             {title: "COVID-19 Poster Generator", logline: "Customize your own social distancing poster", thumbnail: poster_thumbnail, languages: ["HTML, CSS, JS"], launchLink: "https://laurawilsonri.github.io/covid-poster-generator/", pageHTML: this.getPosterGenPage()},
             {title: "Visualize Netflix in D3", logline: "A dashboard of Netflix data visualizations created with D3.js", thumbnail: netflix_thumbnail, languages: ["D3, JS, HTML"], launchLink: "https://laurawilsonri.github.io/netflix-visualizer/", pageHTML: this.getNetflixPage()},
             {title: "Dash", logline: "A collaborative online platform for media management", languages: ["React, TypeScript, C#"], thumbnail: dash_thumbnail, pageHTML: this.getDashPage(), demoLink: "https://cs.brown.edu/research/ptc/#/project/dash"},
-            {title: "Translation API", logline: "An automated translation workflow to multilingual sites", languages: ["Python, Django, Wagtail"], thumbnail: translation_thumbnail, pageHTML: this.getTranslationPage(), demoLink: translation_demo}
+            {title: "Translation API", logline: "An automated translation workflow to multilingual sites", languages: ["Python, Django, Wagtail"], thumbnail: translation_thumbnail, pageHTML: this.getTranslationPage(), demoLink: "https://youtu.be/cJSiN6QXvDg"}
         ]}
 
     getDataversePage() {
@@ -148,9 +146,6 @@ class CodeProjects extends Component {
                     <source src={poster_demo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-
-                <img src={orange_poster}></img>
-                <label>An example of one of the posters you can create!</label>
 
             <h3>How I Built It</h3>
                 <p>I used HTML, CSS, and JavaScript to make the poster generator, and the jsPDF library to download the HTML as a pdf.</p>
@@ -270,10 +265,7 @@ class CodeProjects extends Component {
                 <li>The website is <b>republished with the up-to-date translations.</b></li>
             </ol>
 
-            <video className="autoplay-video" autoPlay muted loop>
-                <source src={translation_demo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cJSiN6QXvDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <label>Mark walks through the automated translation workflow.</label>
 
             <h3>My Role</h3>
