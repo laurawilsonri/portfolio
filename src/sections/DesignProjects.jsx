@@ -28,7 +28,6 @@ import happy_iterations from '../images/happy-robot/robot_iterations.png';
 import poster_demo from '../images/poster/poster_demo.mp4';
 import kit_form from '../images/covid-kit/form.png';
 import kit_ideation from '../images/covid-kit/ideation_collage.png';
-import kit_video from '../images/covid-kit/kitvideo.mp4';
 import kit_mask from '../images/covid-kit/mask_prototype.png';
 import kit_prototype from '../images/covid-kit/prototype.png';
 import kit_final from '../images/covid-kit/final.png';
@@ -45,7 +44,6 @@ import hotel_eyetracking_booking from '../images/hotel/hotel_eyetracking_cal.png
 import hotel_eyetracking_home from '../images/hotel/hotel_eyetracking_home.png';
 import hotel_sketches from '../images/hotel/sketches.png';
 import hotel_guest from '../images/hotel/hotel_guest.png';
-
 
 
 //constants
@@ -219,10 +217,7 @@ class DesignProjects extends Component {
             poster-generator to spread the word about social distancing</li>
         </ol>
 
-        <video controls>
-            <source src={kit_video} type="video/mp4" />
-            Your browser does not support the video tag.
-         </video> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bw-XwJefJ-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          <label>
             The promo video for the Social Distance Kit, made with Premiere Pro. 
         </label>  
