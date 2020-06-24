@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import VerticalNavBar from './VerticalNavBar';
 import WhoIAmPage from './sections/WhoIAmPage'
-import Section from './sections/Section';
 import './PortfolioSite.css';
 import CodeProjects from './sections/CodeProjects';
 import DesignProjects from './sections/DesignProjects';
