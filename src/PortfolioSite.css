@@ -11,6 +11,7 @@
      padding-left: 7%;
      width: 55%;
      padding-bottom: 6em;
+     max-width: 1000px;
 
 }
 
@@ -28,7 +29,7 @@
     padding: 30px;
     background-color: #302f2f;
     color: white;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 100px;
     border-top: solid gray 15px;
@@ -124,10 +125,18 @@ div:focus {
 
     .site-content {
         width: 88%;
-        margin-top: 100px;
+        padding-top: 150px;
     }
 
     #dynamic-text {
         font-size: 100%;
+    }
+}
+
+/* large screen */
+@media screen and (min-width: 1800px) {
+
+    #portfolio-navbar {
+        right: 15%;
     }
 }
