@@ -34,7 +34,9 @@ class PopupButton extends Component {
             <div className="popup-btn">
 
                 <div className="popup-header"
-                     onClick={() => this.state.expanded ? this.close() : this.expand()}>
+                     onClick={(e) => {
+                         console.log(e);
+                         this.state.expanded ? this.close() : this.expand();}}>
 
                     <img className="popup-thumbnail" src={this.props.thumbnail}></img>
                     <div className="popup-btn-text">
@@ -42,7 +44,8 @@ class PopupButton extends Component {
                         <p className="popup-subtitle">{this.props.subtitle}</p>
                         <div className="popup-control-panel">
                             {this.props.keywords?.map((word) =>  <small key={word_count++}>{word}</small>)}
-                            {this.props.launchLink && <a className="clickable" href={this.props.launchLink} target="_blank"><small>{this.props.launchBtnText ? this.props.launchBtnText : "LAUNCH"}<OpenInNew style={{ "marginBottom": "-3px" , "fontSize": "1rem"}}/></small></a>}
+                            {this.props.launchLink &&
+                             <span className="clickable" onClick={(e) => {window.open(this.props.launchLink); e.stopPropagation();}} target="_blank"><small>{this.props.launchBtnText ? this.props.launchBtnText : "LAUNCH"}<OpenInNew style={{ "marginBottom": "-3px" , "fontSize": "1rem"}}/></small></span>}
                         </div>
                     </div>
                 </div>

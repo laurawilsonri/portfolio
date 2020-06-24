@@ -5,10 +5,10 @@ import './Section.css';
 import DisplayGrid from '../components/DisplayGrid';
 import PopupButton from '../components/PopupButton';
 import train_thumbnail from '../images/train/train_thumbnail.jpg'; 
-import robot_thumbnail from '../images/happy-robot/robot_thumbnail.jpeg'; 
-import covid_thumbnail from '../images/covid-kit/kit_thumbnail.png'; 
-import ring_thumbnail from '../images/ring/ring_thumbnail.png'; 
-import hotel_thumbnail from '../images/hotel/hotel_thumbnail.png';
+import robot_thumbnail from '../images/happy-robot/robot_thumbnail.jpg'; 
+import covid_thumbnail from '../images/covid-kit/kit_thumbnail.jpg'; 
+import ring_thumbnail from '../images/ring/ring_thumbnail.jpg'; 
+import hotel_thumbnail from '../images/hotel/hotel_thumbnail.jpg';
 // page image imports //
 // train
 import train_phone1 from '../images/train/train_phone1.png'; 
@@ -17,32 +17,32 @@ import train_physical from '../images/train/train_physical.jpg';
 import train_physical_demo from '../images/train/train_physical_demo.mp4'; 
 import train_app_demo from '../images/train/train_app_walkthrough_cropped.mp4'; 
 // happy the robot
-import happy_3d_model from '../images/happy-robot/3d_model.png';
+import happy_3d_model from '../images/happy-robot/3d_model.jpg';
 import happy_gif from '../images/happy-robot/happy_the_robot.gif';
-import happy_ideation from '../images/happy-robot/ideation.png';
-import happy_iteration1 from '../images/happy-robot/iteration1.jpeg';
+import happy_ideation from '../images/happy-robot/ideation.jpg';
+import happy_iteration1 from '../images/happy-robot/iteration1.jpg';
 import happy_tech_working from '../images/happy-robot/tech_working.gif';
-import happy_iterations from '../images/happy-robot/robot_iterations.png';
+import happy_iterations from '../images/happy-robot/robot_iterations.jpg';
 // covid kit 
 import poster_demo from '../images/poster/poster_demo.mp4';
-import kit_form from '../images/covid-kit/form.png';
-import kit_ideation from '../images/covid-kit/ideation_collage.png';
-import kit_mask from '../images/covid-kit/mask_prototype.png';
-import kit_prototype from '../images/covid-kit/prototype.png';
-import kit_final from '../images/covid-kit/final.png';
-import kit_includes from '../images/covid-kit/kit_includes.png';
+import kit_form from '../images/covid-kit/form.jpg';
+import kit_ideation from '../images/covid-kit/ideation_collage.jpg';
+import kit_mask from '../images/covid-kit/mask_prototype.jpg';
+import kit_prototype from '../images/covid-kit/prototype.jpg';
+import kit_final from '../images/covid-kit/final.jpg';
+import kit_includes from '../images/covid-kit/kit_includes.jpg';
 // access ring
 import ring_final from '../images/ring/ring_final.jpg';
-import ring_ideation from '../images/ring/ideation.png';
+import ring_ideation from '../images/ring/ideation.jpg';
 import ring_3d from '../images/ring/ring_3d.jpg';
 import ring_metal from '../images/ring/metal.jpg';
 import ring_gif from '../images/ring/open_door.gif';
-import ring_poster from '../images/ring/ring_poster.png';
+import ring_poster from '../images/ring/ring_poster.jpg';
 // hotel
-import hotel_eyetracking_booking from '../images/hotel/hotel_eyetracking_cal.png';
-import hotel_eyetracking_home from '../images/hotel/hotel_eyetracking_home.png';
-import hotel_sketches from '../images/hotel/sketches.png';
-import hotel_guest from '../images/hotel/hotel_guest.png';
+import hotel_eyetracking_booking from '../images/hotel/hotel_eyetracking_cal.jpg';
+import hotel_eyetracking_home from '../images/hotel/hotel_eyetracking_home.jpg';
+import hotel_sketches from '../images/hotel/sketches.jpg';
+import hotel_guest from '../images/hotel/hotel_guest.jpg';
 
 
 //constants

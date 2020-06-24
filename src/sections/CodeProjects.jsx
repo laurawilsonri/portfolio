@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 import './Section.css';
 import DisplayGrid from '../components/DisplayGrid';
 import PopupButton from '../components/PopupButton';
-import dv_thumbnail from '../images/dataverse/thumbnail_dv.png'; 
+import dv_thumbnail from '../images/dataverse/thumbnail_dv.jpg'; 
 import netflix_thumbnail from '../images/netflix/netflix_thumbnail.png'; 
 import poster_thumbnail from '../images/poster/poster_thumbnail.png'; 
 import jam_thumbnail from '../images/jam-stage/jam_thumbnail.png';
-import dash_thumbnail from '../images/dash/dash_thumbnail.png';
+import dash_thumbnail from '../images/dash/touch_menu.jpg';
 import translation_thumbnail from '../images/translation/translation_thumbnail.png';
 
 //page image imports
-import dataverse_home from '../images/dataverse/dv_home_page.png';
+import dataverse_home from '../images/dataverse/dv_home_page.jpg';
 import jam_zoomout from '../images/jam-stage/zoomed-out.png';
 import jam_zoomin from '../images/jam-stage/close-up.png';
 import netflix_flow from '../images/netflix/netflix_actor_flow_with_tooltip.png';
 import netflix_runtime from '../images/netflix/netflix_runtime_graph.png';
-import dash_ideation from '../images/dash/ideation.png';
-import dash_interaction_table from '../images/dash/interaction_table.png';
+import dash_ideation from '../images/dash/ideation.jpg';
+import dash_interaction_table from '../images/dash/interaction_table.jpg';
 import dash_touch_demo from '../images/dash/touch_menu_cropped.mp4';
 import translation_diagram from '../images/translation/translation_diagram.png';
 import poster_demo from '../images/poster/poster_demo.mp4'
@@ -32,8 +32,6 @@ class CodeProjects extends Component {
         this.state = {
             projects: this.getProjects()
         };
-
-
       }
 
     // all the code projects

@@ -45,7 +45,8 @@ class PortfolioSite extends Component {
                 </div>
              </div>
 
-                <footer>This website was made with 💙 using Reactjs. <a href="https://github.com/laurawilsonri/portfolio" target="_blank">See source code.</a></footer>
+                <footer>
+                    Laura Wilson | laura_wilson@brown.edu<br/>This website was made with 💙 using Reactjs. <a href="https://github.com/laurawilsonri/portfolio" target="_blank">See source code.</a></footer>
             </div>
         );
     }
