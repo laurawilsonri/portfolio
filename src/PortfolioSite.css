@@ -137,6 +137,10 @@ div:focus {
 @media screen and (min-width: 1800px) {
 
     #portfolio-navbar {
-        right: 15%;
+        right: 10%;
+    }
+
+    .navbar h4 {
+        font-size: 120%;
     }
 }
